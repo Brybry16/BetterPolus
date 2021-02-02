@@ -20,6 +20,7 @@ namespace BetterPolus
         public override void Load()
         {
             Logger = Log;
+            
             Harmony.PatchAll();
         }
     }
