@@ -2,13 +2,59 @@
 An Among Us mod that tweaks Polus, allowing a more balanced experience.
 
 ## Features
-- **Vitals** have been moved to **Laboratory**.
-- The **Reboot Wifi task** is now located in the **Dropship**.
-- The **Chart Course** task is now located in **Comms**.
-- The **Temperature (cold)** task is now located **Outside (Between O2 & Comms)**.
-- The **Vents** near both Reactor Pods are **not linked to each other** anymore.
-   - The Vent on **top of Electrical** is linked to the Vent on **top of Security**.
-   - The Vent **outside of Laboratory** is linked to the Vent **inside Storage**.
+<ul>
+<li><b>Vitals</b> have been moved to <b>Laboratory</b>.<br>
+<details>
+ <summary><b>Show example</b></summary>
+ <p align="center">
+    <img src="images/vitals-pos.png" />
+ </p>
+</details></li>
+
+<li>The <b>Reboot Wifi task</b> is now located in the <b>Dropship</b>.<br>
+<details>
+ <summary><b>Show example</b></summary>
+ <p align="center">
+    <img src="images/wifi-pos.png" />
+ </p>
+</details></li>
+
+<li>The <b>Chart Course task</b> is now located in <b>Comms</b>.<br>
+<details>
+ <summary><b>Show example</b></summary>
+ <p align="center">
+    <img src="images/chartcourse-pos.png" />
+ </p>
+</details></li>
+
+<li>The <b>Temperature (cold) task</b> is now located <b>Outside (Between O2 & Comms)</b>.<br>
+<details>
+ <summary><b>Show example</b></summary>
+ <p align="center">
+    <img src="images/tempcold-pos.png" />
+ </p>
+</details></li>
+
+<li>The <b>Vents</b> near both Reactor Pods are <b>not linked to eachother</b> anymore.
+<ul>
+<li>The Vent <b>on top of Electrical</b> is linked to the Vent <b>on top of Security</b>.<br>
+<details>
+ <summary><b>Show example</b></summary>
+ <p align="center">
+    <img src="images/vents-reactor-left.gif" />
+ </p>
+</details></li>
+
+<li>The Vent <b>outside of Laboratory</b> is linked to the Vent <b>inside Storage</b>.<br>
+<details>
+ <summary><b>Show example</b></summary>
+ <p align="center">
+    <img src="images/vents-reactor-right.gif" />
+ </p>
+</details></li>
+</ul>
+</li>
+</ul>
 
 ## Technology
 This mod has been created using **[Reactor Modding Framework](https://github.com/NuclearPowered/Reactor)**. The game is patched at runtime via **[Reactor BepInEx](https://github.com/NuclearPowered/BepInEx)** and no game file is actually altered.
