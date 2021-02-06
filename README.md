@@ -73,27 +73,23 @@ There are two ways to install the mod :
 ```
 
 ## Q&A
-**How do I know if BetterPolus is correctly installed?**
-
+**How do I know if BetterPolus is correctly installed?**<br>
 Just check that there is a line saying that BetterPolus has been loaded in the top left of the main menu.
 
-**Does this works with (Better-)CrewLink (Proximity Chat)?**
-
+**Does this works with (Better-)CrewLink (Proximity Chat)?**<br>
 Of course!
 
-**Do I risk anything if I play on official Servers?**
-
+**Do I risk anything if I play on official Servers?**<br>
 There is currently no permaban system for the game so it's safe to play on official servers. However, I still recommend you to host your own custom server to be safe. For more information, you can check these repositories :
 - **[Impostor/Impostor](https://github.com/Impostor/Impostor):** A custom server that allows you to create your own plugins.
 - **[NuclearPowered/Impostor](https://github.com/NuclearPowered/Impostor):** Impostor but maintained by the team behind Reactor. <ins>Use this if you want to play with plugins that need Reactor's Custom RPC API or Modded Handshake.</ins>
 
-**Can you use BetterPolus with Woodi's Sheriff Mod?**
+**Can you use BetterPolus with Woodi's Sheriff Mod?**<br>
+Reactor doesn't support Woodi's Sheriff Mod. **However**, you can use [**Reactor-Sheriff**](https://github.com/Brybry16/Reactor-Sheriff) which is an adapted version of Woodi's Sheriff Mod that can run with and BetterPolus.
 
-Unfortunately, Reactor doesn't support Woodi's Sheriff Mod at the time being.
-
-**How can I get started at Among Us Modding?**
-
+**How can I get started at Among Us Modding?**<br>
 Look at the **[Reactor documentation](https://docs.reactor.gg/)** to get started, and join **[Reactor's Discord](https://discord.gg/Zcmsb9UGuq)** to get more help from the community.
 
 ## Licensing
-BetterPolus is licenced under the **[MIT License](LICENSE)**. While you don't have to credit me if you use or modify this mod, it's greatly appreciated!
+BetterPolus is distrbuted under the **[MIT License](LICENSE)**. While you don't have to credit me if you use or modify this mod, it's greatly appreciated!<br>
+[BepInEx](https://github.com/BepInEx/BepInEx) is distributed under the **LGPL-2.1 License**.
