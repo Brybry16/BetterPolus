@@ -9,17 +9,20 @@ namespace BetterPolus
     {
         // Positions
         public static readonly Vector3 DvdScreenNewPos = new Vector3(26.635f, -15.92f, 1f);
-        public static readonly Vector3 VitalsNewPos = new Vector3(30.255f, -6.66f, 1f);
+        public static readonly Vector3 VitalsNewPos = new Vector3(31.275f, -6.45f, 1f);
+        
         public static readonly Vector3 WifiNewPos = new Vector3(15.975f, 0.084f, 1f);
         public static readonly Vector3 NavNewPos = new Vector3(11.07f, -15.298f, -0.015f);
-
+        
+        public static readonly Vector3 TempColdNewPos = new Vector3(7.772f, -17.103f, -0.017f);
+        
         // Scales
         public const float DvdScreenNewScale = 0.75f;
-        public const float VitalsNewScale = 1.05f;
 
         // Checks
-        public static bool IsObjectsFetched;
         public static bool IsAdjustmentsDone;
+        public static bool IsObjectsFetched;
+        public static bool IsRoomsFetched;
         public static bool IsVentsFetched;
 
         // Tasks Tweak
@@ -28,7 +31,6 @@ namespace BetterPolus
 
         // Vitals Tweak
         public static SystemConsole Vitals;
-        public static GameObject WeatherMap;
         public static GameObject DvdScreenOffice;
 
         // Vents Tweak
@@ -36,6 +38,15 @@ namespace BetterPolus
         public static Vent ElectricalVent;
         public static Vent ScienceBuildingVent;
         public static Vent StorageVent;
+        
+        // TempCold Tweak
+        public static Console TempCold;
+        
+        // Rooms
+        public static GameObject Comms;
+        public static GameObject DropShip;
+        public static GameObject Outside;
+        public static GameObject Science;
 
         [HarmonyPatch(typeof(ShipStatus), nameof(ShipStatus.Begin))]
         public static class ShipStatusBeginPatch
@@ -73,7 +84,7 @@ namespace BetterPolus
             }
         }
 
-        public static void ApplyChanges(ShipStatus instance)
+        private static void ApplyChanges(ShipStatus instance)
         {
             if (instance.Type == ShipStatus.MapType.Pb)
             {
@@ -82,10 +93,26 @@ namespace BetterPolus
             }
         }
 
+        public static void FindPolusObjects()
+        {
+            FindVents();
+            FindRooms();
+            FindObjects();
+        }
+
         public static void AdjustPolus()
         {
-            MoveVitals();
-            SwitchNavWifi();
+            if (IsObjectsFetched && IsRoomsFetched)
+            {
+                MoveVitals();
+                SwitchNavWifi();
+                MoveTempCold();
+            }
+            else
+            {
+                BetterPolusPlugin.log.LogError("Couldn't move elements as not all of them have been fetched.");
+            }
+
             AdjustVents();
 
             IsAdjustmentsDone = true;
@@ -97,8 +124,6 @@ namespace BetterPolus
 
         public static void FindVents()
         {
-            BetterPolusPlugin.Logger.LogMessage("Fetching Vent Objects");
-            
             var ventsList = Object.FindObjectsOfType<Vent>().ToList();
             
             if (ElectricBuildingVent == null)
@@ -125,64 +150,70 @@ namespace BetterPolus
                               StorageVent != null;
         }
 
-        public static void FindPolusObjects()
+        public static void FindRooms()
         {
+            if (Comms == null)
+            {
+                Comms = Object.FindObjectsOfType<GameObject>().ToList().Find(o => o.name == "Comms");
+            }
+            
+            if (DropShip == null)
+            {
+                DropShip = Object.FindObjectsOfType<GameObject>().ToList().Find(o => o.name == "Dropship");
+            }
 
-            FindVents();
+            if (Outside == null)
+            {
+                Outside = Object.FindObjectsOfType<GameObject>().ToList().Find(o => o.name == "Outside");
+            }
             
-            // if (Comms == null)
-            // {
-            //     Comms = Object.FindObjectsOfType<GameObject>().ToList().Find(o => o.name == "Comms");
-            // }
-            //
-            // if (DropShip == null)
-            // {
-            //     DropShip = Object.FindObjectsOfType<GameObject>().ToList().Find(o => o.name == "Dropship");
-            // }
-            
+            if (Science == null)
+            {
+                Science = Object.FindObjectsOfType<GameObject>().ToList().Find(o => o.name == "Science");
+            }
+
+            IsRoomsFetched = Comms != null && DropShip != null && Outside != null && Science != null;
+        }
+
+        public static void FindObjects()
+        {
             if (WifiConsole == null)
             {
-                BetterPolusPlugin.Logger.LogMessage("Fetching WifiConsole Object");
                 WifiConsole = Object.FindObjectsOfType<Console>().ToList()
                     .Find(console => console.name == "panel_wifi");
             }
 
             if (NavConsole == null)
             {
-                BetterPolusPlugin.Logger.LogMessage("Fetching NavConsole Object");
                 NavConsole = Object.FindObjectsOfType<Console>().ToList()
                     .Find(console => console.name == "panel_nav");
             }
 
             if (Vitals == null)
             {
-                BetterPolusPlugin.Logger.LogMessage("Fetching Vitals Object");
                 Vitals = Object.FindObjectsOfType<SystemConsole>().ToList()
                     .Find(console => console.name == "panel_vitals");
-            }
-
-            if (WeatherMap == null)
-            {
-                BetterPolusPlugin.Logger.LogMessage("Fetching WeatherMap Object");
-                WeatherMap = Object.FindObjectsOfType<GameObject>().ToList()
-                    .Find(o => o.name == "Weathermap0001");
             }
                 
             if (DvdScreenOffice == null)
             {
-                BetterPolusPlugin.Logger.LogMessage("Fetching DvdScreenAdmin Object");
                 GameObject DvdScreenAdmin = Object.FindObjectsOfType<GameObject>().ToList()
                     .Find(o => o.name == "dvdscreen");
 
                 if (DvdScreenAdmin != null)
                 {
-                    BetterPolusPlugin.Logger.LogMessage("Creating DvdScreenOffice Object");
                     DvdScreenOffice = Object.Instantiate(DvdScreenAdmin);
                 }
             }
 
-            IsObjectsFetched = WifiConsole != null && NavConsole != null && Vitals != null && WeatherMap != null &&
-                                DvdScreenOffice != null;
+            if (TempCold == null)
+            {
+                TempCold = Object.FindObjectsOfType<Console>().ToList()
+                    .Find(console => console.name == "panel_tempcold");
+            }
+            
+            IsObjectsFetched = WifiConsole != null && NavConsole != null && Vitals != null &&
+                               DvdScreenOffice != null && TempCold != null;
         }
 
         // -------------------
@@ -193,8 +224,6 @@ namespace BetterPolus
         {
             if (IsVentsFetched)
             {
-                BetterPolusPlugin.Logger.LogMessage("Adjusting Vents");
-
                 ElectricBuildingVent.Left = ElectricalVent;
                 ElectricalVent.Center = ElectricBuildingVent;
 
@@ -203,75 +232,66 @@ namespace BetterPolus
             }
             else
             {
-                BetterPolusPlugin.Logger.LogError("Couldn't adjust Vents as not all objects have been fetched.");
+                BetterPolusPlugin.log.LogError("Couldn't adjust Vents as not all objects have been fetched.");
+            }
+        }
+
+        public static void MoveTempCold()
+        {
+            if (TempCold.transform.position != TempColdNewPos)
+            {
+                Transform tempColdTransform = TempCold.transform;
+                tempColdTransform.parent = Outside.transform;
+                tempColdTransform.position = TempColdNewPos;
+
+                // Fixes collider being too high
+                BoxCollider2D collider = TempCold.GetComponent<BoxCollider2D>();
+                collider.isTrigger = false;
+                collider.size += new Vector2(0f, -0.3f);
             }
         }
         
         public static void SwitchNavWifi()
         {
-            if (IsObjectsFetched)
+            if (WifiConsole.transform.position != WifiNewPos)
             {
-                if (WifiConsole.transform.position != WifiNewPos)
-                {
-                    BetterPolusPlugin.Logger.LogMessage("Moving Wifi to Dropship");
-                    Transform wifiTransform = WifiConsole.transform;
-                    wifiTransform.position = WifiNewPos;
-                    WifiConsole.Room = SystemTypes.Dropship;
-                }
-
-                if (NavConsole.transform.position != NavNewPos)
-                {
-                    BetterPolusPlugin.Logger.LogMessage("Moving Nav to Comms");
-                    Transform navTransform = NavConsole.transform;
-                    navTransform.position = NavNewPos;
-                    NavConsole.Room = SystemTypes.Comms;
-                }
+                Transform wifiTransform = WifiConsole.transform;
+                wifiTransform.parent = DropShip.transform;
+                wifiTransform.position = WifiNewPos;
             }
-            else
+
+            if (NavConsole.transform.position != NavNewPos)
             {
-                BetterPolusPlugin.Logger.LogError("Couldn't Switch Nav & Wifi as not all objects have been fetched.");
+                Transform navTransform = NavConsole.transform;
+                navTransform.parent = Comms.transform;
+                navTransform.position = NavNewPos;
+                
+                // Prevents crewmate being able to do the task from outside
+                NavConsole.checkWalls = true;
             }
         }
         
         public static void MoveVitals()
         {
-            if (IsObjectsFetched)
+            if (Vitals.transform.position != VitalsNewPos)
             {
-                if (Vitals.transform.position != VitalsNewPos)
-                {
-                    // Vitals
-                    BetterPolusPlugin.Logger.LogMessage("Moving Vitals to Laboratory");
-                    Transform vitalsTransform = Vitals.gameObject.transform;
-                    vitalsTransform.position = VitalsNewPos;
-                    var localScale = vitalsTransform.localScale;
-                    localScale =
-                        new Vector3(VitalsNewScale, localScale.y, localScale.z);
-                    vitalsTransform.localScale = localScale;
-                }
-
-                if (WeatherMap.active)
-                {
-                    // WeatherMap
-                    BetterPolusPlugin.Logger.LogMessage("Deactivating WeatherMap");
-                    WeatherMap.SetActive(false);
-                }
-
-                if (DvdScreenOffice.transform.position != DvdScreenNewPos)
-                {
-                    // DvdScreen
-                    BetterPolusPlugin.Logger.LogMessage("Moving DvdScreenOffice");
-                    Transform dvdScreenTransform = DvdScreenOffice.transform;
-                    dvdScreenTransform.position = DvdScreenNewPos;
-                    var localScale = dvdScreenTransform.localScale;
-                    localScale =
-                        new Vector3(DvdScreenNewScale, localScale.y,
-                            localScale.z);
-                    dvdScreenTransform.localScale = localScale;
-                }
+                // Vitals
+                Transform vitalsTransform = Vitals.gameObject.transform;
+                vitalsTransform.parent = Science.transform;
+                vitalsTransform.position = VitalsNewPos;
             }
-            else
+
+            if (DvdScreenOffice.transform.position != DvdScreenNewPos)
             {
-                BetterPolusPlugin.Logger.LogError("Couldn't move Vitals as not all objects have been fetched.");
+                // DvdScreen
+                Transform dvdScreenTransform = DvdScreenOffice.transform;
+                dvdScreenTransform.position = DvdScreenNewPos;
+                
+                var localScale = dvdScreenTransform.localScale;
+                localScale =
+                    new Vector3(DvdScreenNewScale, localScale.y,
+                        localScale.z);
+                dvdScreenTransform.localScale = localScale;
             }
         }
     }

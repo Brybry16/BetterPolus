@@ -5,6 +5,7 @@ An Among Us mod that tweaks Polus, allowing a more balanced experience.
 - **Vitals** have been moved to **Laboratory**.
 - The **Reboot Wifi task** is now located in the **Dropship**.
 - The **Chart Course** task is now located in **Comms**.
+- The **Temperature (cold)** task is now located **Outside (Between O2 & Comms)**.
 - The **Vents** near both Reactor Pods are **not linked to each other** anymore.
    - The Vent on **top of Electrical** is linked to the Vent on **top of Security**.
    - The Vent **outside of Laboratory** is linked to the Vent **inside Storage**.
@@ -39,11 +40,19 @@ There are two ways to install the mod :
  ## Releases
  | Among Us Version | Mod Version | All-in-one pack | DLL file |
  | ---------------- | ----------- | :-------------: | :------: |
- | v2020.12.9s      | Ver. 1.0.0  | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.0.0/BetterPolus_All-in-one-Pack.zip)** | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.0.0/BetterPolus-2020.12.9s.dll)** |
+ | v2020.12.9s      | Ver. 1.1    | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1/BetterPolus_All-in-one-Pack-1.1.zip)** | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1/BetterPolus-2020.12.9s.dll)** |
+ | v2020.12.9s      | Ver. 1.0    | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.0.0/BetterPolus_All-in-one-Pack.zip)** | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.0.0/BetterPolus-2020.12.9s.dll)** |
  
  ### Changelog
  <details>
- <summary>Version 1.0.0</summary>
+ <summary>Version 1.1</summary>
+ <ul>
+    <li>Fixed Crewmates being able to access Chart Course Task from outside of Comms.</li>
+    <li>Moved Temperature (cold) task to the 'Death Valley' (Outside, between Comms & O2).</li>
+    <li>Moved Vitals where Temperature (cold) was originally (in Laboratory).</li>
+ </ul>
+ 
+ <summary>Version 1.0</summary>
  <ul>
     <li>Vitals have been moved to Laboratory.</li>
     <li>The Reboot Wifi task is now located in the Dropship.</li>

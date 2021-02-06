@@ -14,12 +14,14 @@ namespace BetterPolus
         public const string Id = "ch.brybry.betterpolus";
 
         public Harmony Harmony { get; } = new Harmony(Id);
-        public static ManualLogSource Logger;
+        public static ManualLogSource log;
 
 
         public override void Load()
         {
-            Logger = Log;
+            log = Log;
+            
+            log.LogMessage("BetterPolus Mod loaded");
             
             Harmony.PatchAll();
         }
