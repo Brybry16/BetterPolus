@@ -1,10 +1,6 @@
-﻿using System;
-using System.Linq;
-using System.Reflection;
+﻿using System.Linq;
 using HarmonyLib;
-using UnhollowerBaseLib;
 using UnityEngine;
-using Object = UnityEngine.Object;
 
 namespace BetterPolus
 {
@@ -88,7 +84,7 @@ namespace BetterPolus
             }
         }
 
-        public static void ApplyChanges(ShipStatus instance)
+        private static void ApplyChanges(ShipStatus instance)
         {
             if (instance.Type == ShipStatus.MapType.Pb)
             {
