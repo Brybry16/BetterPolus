@@ -51,7 +51,9 @@ There are two ways to install the mod :
     <li>Moved Temperature (cold) task to the 'Death Valley' (Outside, between Comms & O2).</li>
     <li>Moved Vitals where Temperature (cold) was originally (in Laboratory).</li>
  </ul>
+ </details>
  
+ <details>
  <summary>Version 1.0</summary>
  <ul>
     <li>Vitals have been moved to Laboratory.</li>
