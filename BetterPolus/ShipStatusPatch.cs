@@ -86,7 +86,7 @@ namespace BetterPolus
 
         private static void ApplyChanges(ShipStatus instance)
         {
-            if (instance.Type == ShipStatus.MapType.Pb)
+            if (instance.Type == ShipStatus.Nested_0.Pb)
             {
                 FindPolusObjects();
                 AdjustPolus();

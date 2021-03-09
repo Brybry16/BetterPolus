@@ -86,18 +86,26 @@ There are two ways to install the mod :
  ## Releases
  | Among Us Version | Mod Version | All-in-one pack | DLL file |
  | ---------------- | ----------- | :-------------: | :------: |
- | v2020.12.9s      | Ver. 1.1    | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1/BetterPolus_All-in-one-Pack-1.1.zip)** | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1/BetterPolus-2020.12.9s.dll)** |
- | v2020.12.9s      | Ver. 1.0    | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.0.0/BetterPolus_All-in-one-Pack.zip)** | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.0.0/BetterPolus-2020.12.9s.dll)** |
+ | v2021.3.5s       | Ver. 1.1.1  | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.1/BetterPolus_All-in-one-Pack-1.1.1.zip)** | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.1/BetterPolus-2021.3.5s.dll)** |
+ | v2020.12.9s      | Ver. 1.1    | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1/BetterPolus_All-in-one-Pack-1.1.zip)**     | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1/BetterPolus-2020.12.9s.dll)** |
+ | v2020.12.9s      | Ver. 1.0    | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.0.0/BetterPolus_All-in-one-Pack.zip)**       | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.0.0/BetterPolus-2020.12.9s.dll)** |
  
  ### Changelog
  <details>
- <summary>Version 1.1</summary>
- <ul>
-    <li>Fixed Crewmates being able to access Chart Course Task from outside of Comms.</li>
-    <li>Moved Temperature (cold) task to the 'Death Valley' (Outside, between Comms & O2).</li>
-    <li>Moved Vitals where Temperature (cold) was originally (in Laboratory).</li>
- </ul>
- </details>
+  <summary>Version 1.1.1</summary>
+  <ul>
+     <li>Added compatibility with Among Us v2021.3.5</li>
+  </ul>
+  </details>
+  
+  <details>
+   <summary>Version 1.1</summary>
+   <ul>
+      <li>Fixed Crewmates being able to access Chart Course Task from outside of Comms.</li>
+      <li>Moved Temperature (cold) task to the 'Death Valley' (Outside, between Comms & O2).</li>
+      <li>Moved Vitals where Temperature (cold) was originally (in Laboratory).</li>
+   </ul>
+   </details>
  
  <details>
  <summary>Version 1.0</summary>

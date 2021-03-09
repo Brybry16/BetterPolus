@@ -1,9 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFramework>netstandard2.1</TargetFramework>
-        <Version>1.1</Version>
-        <GameVersion>2020.12.9s</GameVersion>
-        <Mappings>NuclearPowered/Mappings:0.1.0-alpha.2</Mappings>
+        <Version>1.1.1</Version>
+        <GameVersion>2021.3.5s</GameVersion>
+        <Mappings>NuclearPowered/Mappings:0.2.0</Mappings>
 
         <Description>Mod allowing some enhancements in Polus Map</Description>
         <Authors>Brybry</Authors>
