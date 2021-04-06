@@ -16,7 +16,7 @@ namespace BetterPolus
             GameObject.Destroy(reactorVS);
 
             TextRenderer text = __instance.text;
-            text.Text += "\nLoaded [5E4CA6FF]BetterPolus v1.1.1-R []by Brybry";
+            text.Text += "\nLoaded [5E4CA6FF]BetterPolus v1.1.2-R []by Brybry";
         }
     }
 }
