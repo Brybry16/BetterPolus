@@ -78,7 +78,7 @@ There are two ways to install the mod :
 2. Install Reactor by following **[these instructions](https://docs.reactor.gg/docs/basic/install_reactor)**.
 3. Download the **dll file** for your game version in the **[Releases section](#releases)** below.
 4. Copy the dll file into **`Among Us/BepInEx/plugins`**.
-5. (Optional) If you want to play on official servers, you must do the following :
+5. (Optional) If you want to play on official servers, you must do the following (**doesn't work anymore since v2021.3.31s**) :
     - Open **`Among us/BepInEx/config/gg.reactor.api.cfg`** with a text editor.
     - Find the line `Modded handshake = true` and change it to `Modded handshake = false`.
     - Save and close your editor.
@@ -86,6 +86,7 @@ There are two ways to install the mod :
  ## Releases
  | Among Us Version | Mod Version | All-in-one pack | DLL file |
  | ---------------- | ----------- | :-------------: | :------: |
+ | v2021.3.31.3     | Ver. 1.1.2  | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.2/BetterPolus_All-in-one-Pack-1.1.2.zip)** | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.2/BetterPolus-2021.3.31.3s.dll)** |
  | v2021.3.5s       | Ver. 1.1.1  | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.1/BetterPolus_All-in-one-Pack-1.1.1.zip)** | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.1/BetterPolus-2021.3.5s.dll)** |
  | v2020.12.9s      | Ver. 1.1    | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1/BetterPolus_All-in-one-Pack-1.1.zip)**     | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1/BetterPolus-2020.12.9s.dll)** |
  | v2020.12.9s      | Ver. 1.0    | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.0.0/BetterPolus_All-in-one-Pack.zip)**       | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.0.0/BetterPolus-2020.12.9s.dll)** |
