@@ -26,9 +26,9 @@ namespace BetterPolus
 
             ReactorVersionShower.TextUpdated += (text) =>
             {
-                int index = text.Text.LastIndexOf('\n');
-                text.Text = text.Text.Insert(index == -1 ? text.Text.Length - 1 : index, 
-                    "\nLoaded [5E4CA6FF]BetterPolus v1.1.2-R []by Brybry");
+                int index = text.text.LastIndexOf('\n');
+                text.text = text.text.Insert(index == -1 ? text.text.Length - 1 : index, 
+                    "\nLoaded <color=#5E4CA6FF>BetterPolus v1.1.3-R</color> by Brybry");
             };
             
             Harmony.PatchAll();
