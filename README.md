@@ -93,6 +93,13 @@ There are two ways to install the mod :
  
  ### Changelog
  <details>
+  <summary>Version 1.1.3</summary>
+  <ul>
+     <li>Added compatibility with Among Us 2021.4.12s & 2021.4.14s</li>
+  </ul>
+  </details>
+
+ <details>
   <summary>Version 1.1.2</summary>
   <ul>
      <li>Added compatibility with Among Us v2021.3.31.3s</li>
