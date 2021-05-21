@@ -86,7 +86,7 @@ There are two ways to install the mod :
  ## Releases
  | Among Us Version | Mod Version | All-in-one pack | DLL file |
  | ---------------- | ----------- | :-------------: | :------: |
- | v2021.5.10s     | Ver. 1.2.0  | **-NA-** | **[Download](https://github.com/amsyarasyiq/BetterPolus/releases/download/v1.2.0/BetterPolus-2021.5.10s.dll)** |
+ | v2021.5.10s     | Ver. 1.2.0  | **-NA-** | **[Download](https://github.com/amsyarasyiq/BetterPolus/releases/download/1.2.0/BetterPolus-2021.5.10s.dll)** |
  | v2021.3.31.3s     | Ver. 1.1.2  | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.2/BetterPolus_All-in-one-Pack-1.1.2.zip)** | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.2/BetterPolus-2021.3.31.3s.dll)** |
  | v2021.3.5s       | Ver. 1.1.1  | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.1/BetterPolus_All-in-one-Pack-1.1.1.zip)** | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.1/BetterPolus-2021.3.5s.dll)** |
  | v2020.12.9s      | Ver. 1.1    | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1/BetterPolus_All-in-one-Pack-1.1.zip)**     | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1/BetterPolus-2020.12.9s.dll)** |
