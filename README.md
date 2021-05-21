@@ -1,4 +1,4 @@
-# BetterPolus
+# BetterPolus (without Reactor dependency)
 An Among Us mod that tweaks Polus, allowing a more balanced experience.
 
 ## Features
@@ -92,6 +92,13 @@ There are two ways to install the mod :
  | v2020.12.9s      | Ver. 1.0    | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.0.0/BetterPolus_All-in-one-Pack.zip)**       | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.0.0/BetterPolus-2020.12.9s.dll)** |
  
  ### Changelog
+  <details>
+  <summary>Version 1.2.0</summary>
+  <ul>
+     <li>Added compatibility with Among Us v2021.5.10s</li>
+  </ul>
+  </details>
+  
  <details>
   <summary>Version 1.1.2</summary>
   <ul>
