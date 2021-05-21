@@ -1,4 +1,4 @@
-# BetterPolus
+# BetterPolus (without Reactor dependency)
 An Among Us mod that tweaks Polus, allowing a more balanced experience.
 
 ## Features
@@ -57,9 +57,9 @@ An Among Us mod that tweaks Polus, allowing a more balanced experience.
 </ul>
 
 ## Technology
-This mod has been created using **[Reactor Modding Framework](https://github.com/NuclearPowered/Reactor)**. The game is patched at runtime via **[Reactor BepInEx](https://github.com/NuclearPowered/BepInEx)** and no game file is actually altered.
+The game is patched at runtime via **[BepInEx](https://github.com/BepInEx/BepInEx)** and no game file is actually altered.
 
-For the moment, this mod supports **Among Us v2020.12.9s** *(Steam version)*.
+For the moment, this mod supports **Among Us v2020.5.10s** *(Steam version)*.
 
 ## Installation
 For a better experience, every player in your lobby should download BetterPolus. You *can* play with people that don't have the mod installed but keep in mind that they won't see the same things as you (for example Vitals location).
@@ -86,12 +86,28 @@ There are two ways to install the mod :
  ## Releases
  | Among Us Version | Mod Version | All-in-one pack | DLL file |
  | ---------------- | ----------- | :-------------: | :------: |
- | v2021.3.31.3     | Ver. 1.1.2  | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.2/BetterPolus_All-in-one-Pack-1.1.2.zip)** | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.2/BetterPolus-2021.3.31.3s.dll)** |
+ | v2021.5.10s     | Ver. 1.2.1  | **-NA-** | **[Download](https://github.com/amsyarasyiq/BetterPolus/releases/download/1.2.1/BetterPolus.dll)** |
+ | v2021.5.10s     | Ver. 1.2.0  | **-NA-** | **[Download](https://github.com/amsyarasyiq/BetterPolus/releases/download/1.2.0/BetterPolus-2021.5.10s.dll)** |
+ | v2021.3.31.3s     | Ver. 1.1.2  | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.2/BetterPolus_All-in-one-Pack-1.1.2.zip)** | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.2/BetterPolus-2021.3.31.3s.dll)** |
  | v2021.3.5s       | Ver. 1.1.1  | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.1/BetterPolus_All-in-one-Pack-1.1.1.zip)** | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.1/BetterPolus-2021.3.5s.dll)** |
  | v2020.12.9s      | Ver. 1.1    | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1/BetterPolus_All-in-one-Pack-1.1.zip)**     | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1/BetterPolus-2020.12.9s.dll)** |
  | v2020.12.9s      | Ver. 1.0    | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.0.0/BetterPolus_All-in-one-Pack.zip)**       | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.0.0/BetterPolus-2020.12.9s.dll)** |
  
  ### Changelog
+   <details>
+  <summary>Version 1.2.1</summary>
+  <ul>
+     <li>Added support for non-Reactor's BepInEx</li>
+  </ul>
+  </details>
+  
+  <details>
+  <summary>Version 1.2.0</summary>
+  <ul>
+     <li>Added compatibility with Among Us v2021.5.10s</li>
+  </ul>
+  </details>
+  
  <details>
   <summary>Version 1.1.2</summary>
   <ul>
@@ -157,8 +173,8 @@ There is currently no permaban system for the game so it's safe to play on offic
 - **[Impostor/Impostor](https://github.com/Impostor/Impostor):** A custom server that allows you to create your own plugins.
 - **[NuclearPowered/Impostor](https://github.com/NuclearPowered/Impostor):** Impostor but maintained by the team behind Reactor. <ins>Use this if you want to play with plugins that need Reactor's Custom RPC API or Modded Handshake.</ins>
 
-**Can you use BetterPolus with Woodi's Sheriff Mod?**<br>
-Reactor doesn't support Woodi's Sheriff Mod. **However**, you can use [**Reactor-Sheriff**](https://github.com/Brybry16/Reactor-Sheriff) which is an adapted version of Woodi's Sheriff Mod that can run with and BetterPolus.
+**Can you use BetterPolus with other mods?**<br>
+Yes.
 
 **How can I get started at Among Us Modding?**<br>
 Look at the **[Reactor documentation](https://docs.reactor.gg/)** to get started, and join **[Reactor's Discord](https://discord.gg/Zcmsb9UGuq)** to get more help from the community.

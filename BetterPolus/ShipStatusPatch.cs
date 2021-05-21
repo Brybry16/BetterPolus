@@ -110,7 +110,7 @@ namespace BetterPolus
             }
             else
             {
-                BetterPolusPlugin.log.LogError("Couldn't move elements as not all of them have been fetched.");
+                BetterPolusPlugin.Logger.LogError("Couldn't move elements as not all of them have been fetched.");
             }
 
             AdjustVents();
@@ -232,7 +232,7 @@ namespace BetterPolus
             }
             else
             {
-                BetterPolusPlugin.log.LogError("Couldn't adjust Vents as not all objects have been fetched.");
+                BetterPolusPlugin.Logger.LogError("Couldn't adjust Vents as not all objects have been fetched.");
             }
         }
 
