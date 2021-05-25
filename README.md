@@ -1,4 +1,4 @@
-# BetterPolus (without Reactor dependency)
+# BetterPolus
 An Among Us mod that tweaks Polus, allowing a more balanced experience.
 
 ## Features
