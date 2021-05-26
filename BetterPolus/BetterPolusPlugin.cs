@@ -3,12 +3,10 @@ using BepInEx.IL2CPP;
 using HarmonyLib;
 
 namespace BetterPolus {
-    [BepInPlugin(Id, Name, Version)]
+    [BepInPlugin(Id, "BetterPolus", "1.2.1")]
     [BepInProcess("Among Us.exe")]
     public class BetterPolusPlugin : BasePlugin {
         public const string Id = "ch.brybry.betterpolus";
-        public const string Name = "BetterPolus";
-        public const string Version = "1.2.1";
 		static internal BepInEx.Logging.ManualLogSource Logger;
         public Harmony Harmony { get; } = new Harmony(Id);
         public override void Load(){
