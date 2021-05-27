@@ -1,21 +1,27 @@
 <Project Sdk="Microsoft.NET.Sdk">
+
     <PropertyGroup>
         <TargetFramework>netstandard2.1</TargetFramework>
-        <Version>1.1.2</Version>
-        <GameVersion>2021.3.31.3s</GameVersion>
-        <Mappings>NuclearPowered/Mappings:0.3.0</Mappings>
-
+        <Version>1.2.1</Version>
         <Description>Mod allowing some enhancements in Polus Map</Description>
         <Authors>Brybry</Authors>
     </PropertyGroup>
 
-    <ItemGroup>
-        <Deobfuscate Include="$(AmongUs)\BepInEx\plugins\Reactor-$(GameVersion).dll" />
+    <PropertyGroup>
+        <GameVersion>2021.5.10s</GameVersion>
+        <DefineConstants>$(DefineConstants);STEAM</DefineConstants>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
 
-        <PackageReference Include="Reactor.OxygenFilter.MSBuild" Version="0.3.0" />
+    <ItemGroup>
+        <Reference Include="$(AmongUs)/BepInEx/core/*.dll"/>
+        <Reference Include="$(AmongUs)/BepInEx/unhollowed/*.dll"/>
     </ItemGroup>
 
-    <Target Name="Copy" AfterTargets="Reobfuscate">
-        <Copy SourceFiles="$(OutputPath)reobfuscated/$(AssemblyName)-$(GameVersion).dll" DestinationFolder="$(AmongUs)/BepInEx/plugins/" Condition="'$(Configuration)' == 'Debug'" />
+    <Target Name="CopyCustomContent" AfterTargets="AfterBuild">
+        <Message Text="Second occurrence" />
+        <Copy SourceFiles="$(ProjectDir)\bin\$(Configuration)\netstandard2.1\BetterPolus.dll" DestinationFolder="$(AmongUs)/BepInEx/plugins/" />
+	<Copy SourceFiles="$(ProjectDir)\bin\$(Configuration)\netstandard2.1\BetterPolus.dll" DestinationFolder="../build/" />
     </Target>
+
 </Project>
