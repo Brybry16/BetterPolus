@@ -174,3 +174,5 @@ Look at the **[Reactor documentation](https://docs.reactor.gg/)** to get started
 ## Licensing
 BetterPolus is distrbuted under the **[MIT License](LICENSE)**. While you don't have to credit me if you use or modify this mod, it's greatly appreciated!<br>
 [BepInEx](https://github.com/BepInEx/BepInEx) is distributed under the **LGPL-2.1 License**.
+
+*This mod is not affiliated with Among Us or Innersloth LLC, and the content contained therein is not endorsed or otherwise sponsored by Innersloth LLC. Portions of the materials contained herein are property of Innersloth LLC. © Innersloth LLC.*
