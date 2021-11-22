@@ -1,20 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFramework>netstandard2.1</TargetFramework>
-        <Version>1.1.3</Version>
+        <Version>1.1.4</Version>
 
         <Description>An Among Us mod that tweaks Polus, allowing a more balanced experience.</Description>
         <Authors>Brybry</Authors>
-    </PropertyGroup>
-
-    <PropertyGroup Condition="'$(GamePlatform)' == 'Steam'">
-        <GameVersion>2021.6.30s</GameVersion>
-        <DefineConstants>$(DefineConstants);STEAM</DefineConstants>
-    </PropertyGroup>
-
-    <PropertyGroup Condition="'$(GamePlatform)' == 'Itch'">
-        <GameVersion>2021.6.30i</GameVersion>
-        <DefineConstants>$(DefineConstants);ITCH</DefineConstants>
     </PropertyGroup>
     
     <ItemGroup>
@@ -27,8 +17,6 @@
         </Reference>
 
         <Reference Remove="$(AmongUs)\BepInEx\unhollowed\netstandard.dll;$(AmongUs)\BepInEx\unhollowed\Newtonsoft.Json.dll" />
-
-        <Reference Include="$(AmongUs)\BepInEx\plugins\Reactor.dll" />
     </ItemGroup>
 
     <Target Name="Copy" AfterTargets="Build">

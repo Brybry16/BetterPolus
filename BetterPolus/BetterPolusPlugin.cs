@@ -2,36 +2,43 @@
 using BepInEx.IL2CPP;
 using BepInEx.Logging;
 using HarmonyLib;
-using Reactor;
-using Reactor.Patches;
+using System;
+using UnityEngine.SceneManagement;
 
 namespace BetterPolus
 {
-    [BepInPlugin(Id)]
+    [BepInPlugin(Id, Name, Version)]
     [BepInProcess("Among Us.exe")]
-    [BepInDependency(ReactorPlugin.Id)]
     public class BetterPolusPlugin : BasePlugin
     {
         public const string Id = "ch.brybry.betterpolus";
+        public const string Name = "BetterPolus Mod";
+        public const string Version = "1.1.4";
 
         public Harmony Harmony { get; } = new Harmony(Id);
         public static ManualLogSource log;
-
 
         public override void Load()
         {
             log = Log;
             
             log.LogMessage("BetterPolus Mod loaded");
-
-            ReactorVersionShower.TextUpdated += (text) =>
-            {
-                int index = text.text.LastIndexOf('\n');
-                text.text = text.text.Insert(index == -1 ? text.text.Length - 1 : index, 
-                    "\nLoaded <color=#5E4CA6FF>BetterPolus v1.1.3-R</color> by Brybry");
-            };
             
+            SceneManager.add_sceneLoaded((Action<Scene, LoadSceneMode>) ((scene, loadSceneMode) =>
+            {
+                ModManager.Instance.ShowModStamp();
+            }));
+
             Harmony.PatchAll();
+        }
+
+        [HarmonyPatch(typeof(VersionShower), nameof(VersionShower.Start))]
+        public static class VersionShowerPatch
+        {
+            public static void Postfix(VersionShower __instance)
+            {
+                __instance.text.text += " + <color=#5E4CA6FF>BetterPolus v1.1.4</color> by Brybry";
+            }
         }
     }
 }
