@@ -54,12 +54,17 @@ An Among Us mod that tweaks Polus, allowing a more balanced experience.
 </details></li>
 </ul>
 </li>
+ <li>The <b>Seismic Stabilizers Sabotage</b> (also known as Reactor Meltdown) has been <b>buffed</b>.
+  <ul>
+   <li>The countdown will now start at <b>40 seconds left</b> (instead of 60 seconds).</li>
+  </ul>
+ </li>
 </ul>
 
 ## Technology
 The game is patched at runtime via **[BepInEx Bleeding Edge](https://github.com/BepInEx/BepInEx)** and no game file is actually altered.
 
-For the moment, this mod supports **Among Us v2021.11.9.5**.
+For the moment, this mod supports **Among Us v2022.10.25**.
 
 ## Installation
 For a better experience, every player in your lobby should download BetterPolus. You *can* play with people that don't have the mod installed but keep in mind that they won't see the same things as you (for example Vitals location).
@@ -74,7 +79,7 @@ There are two ways to install the mod :
 3. Run the game. The mod should be installed and it should work.
 
 ### Custom install
-1. Download the latest build of BepInEx Bleeding Edge **[on this page](https://builds.bepis.io/projects/bepinex_be)** (select BepInEx Unity IL2CPP for Windows x86 machines).
+1. Download the latest build of BepInEx Bleeding Edge **[on this page](https://builds.bepinex.dev/projects/bepinex_be)** (select `BepInEx Unity (IL2CPP) for Windows (x86) games`).
 2. Unzip the file in your Among Us directory and run the game once. Close the game once you see the title screen.
 3. Download the **dll file** for your game version in the **[Releases section](#releases)** below.
 4. Copy the dll file into **`Among Us/BepInEx/plugins`**.
@@ -82,8 +87,9 @@ There are two ways to install the mod :
     
  ## Releases
  | Among Us Version | Mod Version | All-in-one pack | DLL file |
- | ---------------- | ----------- | :-------------: | :------: |
- | v2021.11.9.5     | Ver. 1.1.4  | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.4/BetterPolus_All-in-one-Pack-1.1.4.zip)** | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.4/BetterPolus-1.1.4.dll)** |
+ |-------------| ----------- | :-------------: | :------: |
+ | v2022.10.25      | Ver. 1.2.0  | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.2.0/BetterPolus_All-in-one-Pack-1.2.0.zip)** | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.2.0/BetterPolus.dll)** |
+ | v2021.11.9.5+    | Ver. 1.1.4  | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.4/BetterPolus_All-in-one-Pack-1.1.4.zip)** | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.4/BetterPolus-1.1.4.dll)** |
  | v2021.6.30       | Ver. 1.1.3  | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.3/BetterPolus_All-in-one-Pack-1.1.3.zip)** | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.3/BetterPolus-1.1.3.dll)** |
  | v2021.3.31.3     | Ver. 1.1.2  | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.2/BetterPolus_All-in-one-Pack-1.1.2.zip)** | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.2/BetterPolus-2021.3.31.3s.dll)** |
  | v2021.3.5s       | Ver. 1.1.1  | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.1/BetterPolus_All-in-one-Pack-1.1.1.zip)** | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.1/BetterPolus-2021.3.5s.dll)** |
@@ -91,6 +97,14 @@ There are two ways to install the mod :
  | v2020.12.9s      | Ver. 1.0    | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.0.0/BetterPolus_All-in-one-Pack.zip)**       | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.0.0/BetterPolus-2020.12.9s.dll)** |
  
  ### Changelog
+ <details>
+  <summary>Version 1.2.0</summary>
+  <ul>
+     <li>Added compatibility with the .net6.0-based BepInEx BE</li>
+     <li>Seismic Stabilizers Sabotage got buffed (sabotage duration went from 60s to 40s)</li>
+  </ul>
+  </details>
+
  <details>
   <summary>Version 1.1.4</summary>
   <ul>

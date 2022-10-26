@@ -11,7 +11,7 @@ namespace BetterPolus
     {
         public const string Id = "ch.brybry.betterpolus";
         public const string Name = "BetterPolus Mod";
-        public const string Version = "1.1.6";
+        public const string Version = "1.2.0";
 
         public Harmony Harmony { get; } = new Harmony(Id);
         public static ManualLogSource log;
@@ -30,7 +30,7 @@ namespace BetterPolus
         {
             public static void Postfix(VersionShower __instance)
             {
-                __instance.text.text += $" + <color=#5E4CA6FF>BetterPolus v{Version}</color> by Brybry";
+                __instance.text.text += $"<size=70%> + <color=#5E4CA6FF>BetterPolus v{Version}</color> by Brybry</size>";
             }
         }
 
