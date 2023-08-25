@@ -1,47 +1,33 @@
 ﻿using BepInEx;
+using BepInEx.Configuration;
 using BepInEx.Logging;
 using HarmonyLib;
 using BepInEx.Unity.IL2CPP;
 
-namespace BetterPolus
+namespace BetterPolus;
+
+[BepInPlugin(Id, Name, Version)]
+[BepInProcess("Among Us.exe")]
+public class BetterPolusPlugin : BasePlugin
 {
-    [BepInPlugin(Id, Name, Version)]
-    [BepInProcess("Among Us.exe")]
-    public class BetterPolusPlugin : BasePlugin
+    private const string Id = "ch.brybry.betterpolus";
+    private const string Name = "BetterPolus Mod";
+    public const string Version = "1.2.1";
+
+    public Harmony Harmony { get; } = new Harmony(Id);
+    public static ManualLogSource log;
+    public static ConfigEntry<bool> Enabled { get; private set; }
+    public static ConfigEntry<float> ReactorCountdown { get; private set; }
+
+    public override void Load()
     {
-        public const string Id = "ch.brybry.betterpolus";
-        public const string Name = "BetterPolus Mod";
-        public const string Version = "1.2.0";
+        log = Log;
 
-        public Harmony Harmony { get; } = new Harmony(Id);
-        public static ManualLogSource log;
-
-        public override void Load()
-        {
-            log = Log;
+        Enabled = Config.Bind("Polus", "Enable Better Polus", true, "Enable Polus map modifications");
+        ReactorCountdown = Config.Bind("Polus", "Reactor Countdown", 40f, "Reactor sabotage countdown in Polus map");
             
-            log.LogMessage($"{Name} loaded");
+        log.LogMessage($"{Name} loaded");
 
-            Harmony.PatchAll();
-        }
-
-        [HarmonyPatch(typeof(VersionShower), nameof(VersionShower.Start))]
-        public static class VersionShowerPatch
-        {
-            public static void Postfix(VersionShower __instance)
-            {
-                __instance.text.text += $"<size=70%> + <color=#5E4CA6FF>BetterPolus v{Version}</color> by Brybry</size>";
-            }
-        }
-
-        [HarmonyPatch(typeof(AmongUsClient), nameof(AmongUsClient.Awake))]
-        public static class ModStampPatch
-        {
-            [HarmonyPrefix]
-            public static void Prefix()
-            {
-                DestroyableSingleton<ModManager>.Instance.ShowModStamp();
-            }
-        }
+        Harmony.PatchAll();
     }
 }

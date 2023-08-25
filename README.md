@@ -86,18 +86,28 @@ There are two ways to install the mod :
 5. Run the game. The mod should be installed and it should work.
     
  ## Releases
- | Among Us Version | Mod Version | All-in-one pack | DLL file |
- |-------------| ----------- | :-------------: | :------: |
- | v2023.6.13+   | Ver. 1.2.0be670 | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.2.0/BetterPolus_All-in-one-Pack-1.2.0be670.zip)** | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.2.0/BetterPolus.dll)** |
- | v2022.10.25+  | Ver. 1.2.0      | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.2.0/BetterPolus_All-in-one-Pack-1.2.0.zip)**      | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.2.0/BetterPolus.dll)** |
- | v2021.11.9.5+ | Ver. 1.1.4      | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.4/BetterPolus_All-in-one-Pack-1.1.4.zip)**      | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.4/BetterPolus-1.1.4.dll)** |
- | v2021.6.30    | Ver. 1.1.3      | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.3/BetterPolus_All-in-one-Pack-1.1.3.zip)**      | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.3/BetterPolus-1.1.3.dll)** |
- | v2021.3.31.3  | Ver. 1.1.2      | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.2/BetterPolus_All-in-one-Pack-1.1.2.zip)**      | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.2/BetterPolus-2021.3.31.3s.dll)** |
- | v2021.3.5s    | Ver. 1.1.1      | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.1/BetterPolus_All-in-one-Pack-1.1.1.zip)**      | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.1/BetterPolus-2021.3.5s.dll)** |
- | v2020.12.9s   | Ver. 1.1        | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1/BetterPolus_All-in-one-Pack-1.1.zip)**          | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1/BetterPolus-2020.12.9s.dll)** |
- | v2020.12.9s   | Ver. 1.0        | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.0.0/BetterPolus_All-in-one-Pack.zip)**            | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.0.0/BetterPolus-2020.12.9s.dll)** |
+ | Among Us Version | Mod Version     |                                                       All-in-one pack                                                       |                                                   DLL file                                                    |
+ |------------------|-----------------|:---------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------:|
+ | v2023.7.12+      | Ver. 1.2.1      |   **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.2.1/BetterPolus_All-in-one-Pack-1.2.1.zip)**    |       **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.2.1/BetterPolus.dll)**        |
+ | v2023.6.13+      | Ver. 1.2.0be670 | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.2.0/BetterPolus_All-in-one-Pack-1.2.0be670.zip)** |       **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.2.0/BetterPolus.dll)**        |
+ | v2022.10.25+     | Ver. 1.2.0      |   **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.2.0/BetterPolus_All-in-one-Pack-1.2.0.zip)**    |       **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.2.0/BetterPolus.dll)**        |
+ | v2021.11.9.5+    | Ver. 1.1.4      |   **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.4/BetterPolus_All-in-one-Pack-1.1.4.zip)**    |    **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.4/BetterPolus-1.1.4.dll)**     |
+ | v2021.6.30       | Ver. 1.1.3      |   **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.3/BetterPolus_All-in-one-Pack-1.1.3.zip)**    |    **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.3/BetterPolus-1.1.3.dll)**     |
+ | v2021.3.31.3     | Ver. 1.1.2      |   **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.2/BetterPolus_All-in-one-Pack-1.1.2.zip)**    | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.2/BetterPolus-2021.3.31.3s.dll)** |
+ | v2021.3.5s       | Ver. 1.1.1      |   **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.1/BetterPolus_All-in-one-Pack-1.1.1.zip)**    |  **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1.1/BetterPolus-2021.3.5s.dll)**   |
+ | v2020.12.9s      | Ver. 1.1        |     **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1/BetterPolus_All-in-one-Pack-1.1.zip)**      |   **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.1/BetterPolus-2020.12.9s.dll)**   |
+ | v2020.12.9s      | Ver. 1.0        |      **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.0.0/BetterPolus_All-in-one-Pack.zip)**       |  **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.0.0/BetterPolus-2020.12.9s.dll)**  |
  
  ### Changelog
+<details>
+  <summary>Version 1.2.1</summary>
+  <ul>
+     <li>Added compatibility with Among Us v2023.7.12s</li>
+     <li>Seismic Stabilizers Sabotage duration is customizable in config file (40s by default)</li>
+     <li>Polus map modifications can be disabled in config file (enabled by default)</li>
+     <li>The names of tasks room that have been moved appear correctly</li>
+  </ul>
+  </details>
  <details>
   <summary>Version 1.2.0</summary>
   <ul>
@@ -175,7 +185,7 @@ There are two ways to install the mod :
 
 ## Q&A
 **How do I know if BetterPolus is correctly installed?**<br>
-Just check that there is a line saying that BetterPolus has been loaded in the top left of the main menu.
+Just check that there is a line saying that BetterPolus has been loaded in the bottom left of the main menu.
 
 **Does this works with (Better-)CrewLink (Proximity Chat)?**<br>
 Of course!
