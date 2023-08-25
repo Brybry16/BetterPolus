@@ -50,7 +50,7 @@ public static class ShipStatusPatches
 
     private static void ApplyChanges(ShipStatus instance)
     {
-        if (instance.Type == ShipStatus.MapType.Pb)
+        if (instance.Type == ShipStatus.MapType.Pb && BetterPolusPlugin.Enabled.Value)
         {
             FindPolusObjects();
             AdjustPolus();
