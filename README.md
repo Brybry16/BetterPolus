@@ -88,6 +88,7 @@ There are two ways to install the mod :
  ## Releases
  | Among Us Version | Mod Version     |                                                       All-in-one pack                                                       |                                                   DLL file                                                    |
  |------------------|-----------------|:---------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------:|
+ | v2023.10.24+     | Ver. 1.2.2      |   **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.2.2/BetterPolus_All-in-one-Pack-1.2.2.zip)**    |       **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.2.2/BetterPolus.dll)**        |
  | v2023.7.12+      | Ver. 1.2.1      |   **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.2.1/BetterPolus_All-in-one-Pack-1.2.1.zip)**    |       **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.2.1/BetterPolus.dll)**        |
  | v2023.6.13+      | Ver. 1.2.0be670 | **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.2.0/BetterPolus_All-in-one-Pack-1.2.0be670.zip)** |       **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.2.0/BetterPolus.dll)**        |
  | v2022.10.25+     | Ver. 1.2.0      |   **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.2.0/BetterPolus_All-in-one-Pack-1.2.0.zip)**    |       **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.2.0/BetterPolus.dll)**        |
@@ -99,6 +100,12 @@ There are two ways to install the mod :
  | v2020.12.9s      | Ver. 1.0        |      **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.0.0/BetterPolus_All-in-one-Pack.zip)**       |  **[Download](https://github.com/Brybry16/BetterPolus/releases/download/v1.0.0/BetterPolus-2020.12.9s.dll)**  |
  
  ### Changelog
+<details>
+  <summary>Version 1.2.2</summary>
+  <ul>
+     <li>Added compatibility with Among Us v2023.10.24</li>
+  </ul>
+  </details>
 <details>
   <summary>Version 1.2.1</summary>
   <ul>
