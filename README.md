@@ -64,7 +64,7 @@ An Among Us mod that tweaks Polus, allowing a more balanced experience.
 ## Technology
 The game is patched at runtime via **[BepInEx Bleeding Edge](https://github.com/BepInEx/BepInEx)** and no game file is actually altered.
 
-For the moment, this mod supports **Among Us v2022.10.25**.
+For the moment, this mod supports **Among Us v2023.10.24**.
 
 ## Installation
 For a better experience, every player in your lobby should download BetterPolus. You *can* play with people that don't have the mod installed but keep in mind that they won't see the same things as you (for example Vitals location).
