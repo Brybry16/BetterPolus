@@ -10,7 +10,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="AmongUs.GameLibs.Steam" Version="2023.7.11" />
+        <PackageReference Include="AmongUs.GameLibs.Steam" Version="2023.10.24" />
         <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.672" />
         <PackageReference Include="BepInEx.IL2CPP.MSBuild" Version="2.1.0-rc.1">
           <PrivateAssets>all</PrivateAssets>
