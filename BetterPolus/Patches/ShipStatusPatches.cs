@@ -123,7 +123,7 @@ public static class ShipStatusPatches
 
         if (DropShip == null)
         {
-            DropShip = Object.FindObjectsOfType<GameObject>().ToList().Find(o => o.name == "Dropship");
+            DropShip = GameObject.Find("PolusShip(Clone)")?.transform?.FindChild("Dropship")?.gameObject;
         }
 
         if (Outside == null)
