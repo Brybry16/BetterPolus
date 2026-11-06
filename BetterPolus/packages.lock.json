@@ -45,9 +45,9 @@
       },
       "Microsoft.Unity.Analyzers": {
         "type": "Direct",
-        "requested": "[1.25.0, )",
-        "resolved": "1.25.0",
-        "contentHash": "jOclVb2PVoOdKafuzt3bJ3BHkbjsfuAx+60yqP4zCAhlNa1rwn1Jt05qrmqJgmBY42S08hXbps9KA6QR2Z7aOA=="
+        "requested": "[1.28.0, )",
+        "resolved": "1.28.0",
+        "contentHash": "UB8Sy27yFLqahBULPI7NmJbsV8B+6fTqOWRYgVhPSRE3XGMEfrWwBDLv2W1TqIrvrh6QQ1DBSJIhCYejNviXaQ=="
       },
       "Reactor": {
         "type": "Direct",
