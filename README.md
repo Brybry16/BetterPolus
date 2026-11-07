@@ -1,5 +1,32 @@
-# BetterPolus
-An Among Us mod that tweaks Polus, allowing a more balanced experience.
+<p align="center">
+  <img align="center" src="https://github.com/Isax820/RePolus/blob/main/images/Icon.png">
+  </a>
+</p>
+
+<h1 align="center">
+RePolus
+</h1>
+
+<p align="center">
+RePolus is a fork of [BetterPolus](https://github.com/Brybry16/BetterPolus) to have a custom Polus.
+<br/>
+
+<hr />
+<p align="center">
+	<a href="https://github.com/Isax820/RePolus/releases">
+		<img alt="GitHub Downloads" src="https://img.shields.io/github/downloads/Isax820/RePolus/total?cacheSeconds=300">
+	</a>
+	<a href="https://github.com/Isax820/RePolus/releases/latest">
+		<img alt="Latest GitHub Release" src="https://img.shields.io/github/v/release/Isax820/RePolus?include_prereleases">
+	</a>
+	<a href="https://github.com/Isax820/RePolus/blob/main/LICENSE.md">
+		<img alt="GitHub License" src="https://img.shields.io/github/license/Isax820/RePolus">
+	</a>
+    <a href="https://discord.gg/zz2bCrU8wp">
+		<img alt="Discord" src="https://img.shields.io/discord/1076082745509429268?color=cornflowerblue&label=Discord&logo=Discord&logoColor=white">
+	</a>
+</p>
+<hr />
 
 ## Features
 <ul>
@@ -64,7 +91,7 @@ An Among Us mod that tweaks Polus, allowing a more balanced experience.
 ## Technology
 The game is patched at runtime via **[BepInEx Bleeding Edge](https://github.com/BepInEx/BepInEx)** and no game file is actually altered.
 
-For the moment, this mod supports **Among Us v2023.10.24**.
+For the moment, this mod supports **Among Us v2026.9.29 (v19)**.
 
 ## Installation
 For a better experience, every player in your lobby should download BetterPolus. You *can* play with people that don't have the mod installed but keep in mind that they won't see the same things as you (for example Vitals location).
