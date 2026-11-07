@@ -8,8 +8,11 @@ RePolus
 </h1>
 
 <p align="center">
-RePolus is a fork of [BetterPolus](https://github.com/Brybry16/BetterPolus) to have a custom Polus.
-<br/>
+  RePolus is a fork of 
+  <a href="https://github.com/Brybry16/BetterPolus">BetterPolus</a>
+  to have a custom Polus.
+  <br/>
+</p>
 
 <hr />
 <p align="center">
