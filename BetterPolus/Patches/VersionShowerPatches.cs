@@ -9,6 +9,6 @@ public static class VersionShowerPatches
     [HarmonyPostfix]
     private static void StartPostfix(VersionShower __instance)
     {
-        __instance.text.text += $"<size=70%> + <color=#5E4CA6FF>BetterPolus v{BetterPolusPlugin.Version}</color> by Isax820</size>";
+        __instance.text.text += $"<size=70%> + <color=#5E4CA6FF>BetterPolus v{BetterPolusPlugin.Version}</color> by Brybry</size>";
     }
 }

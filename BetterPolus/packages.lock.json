@@ -49,15 +49,6 @@
         "resolved": "1.28.0",
         "contentHash": "UB8Sy27yFLqahBULPI7NmJbsV8B+6fTqOWRYgVhPSRE3XGMEfrWwBDLv2W1TqIrvrh6QQ1DBSJIhCYejNviXaQ=="
       },
-      "Reactor": {
-        "type": "Direct",
-        "requested": "[2.5.1-ci.400, )",
-        "resolved": "2.5.1-ci.400",
-        "contentHash": "TIEkofMDJmpzKlPpapVcQsEL+QUuEDv5s2yCis5xnVGx9H9yLJZ2QlZmOsFgbzqHlrLpqYfWKwe86fMFZS41Gg==",
-        "dependencies": {
-          "BepInEx.Unity.IL2CPP": "6.0.0-be.735"
-        }
-      },
       "AsmResolver": {
         "type": "Transitive",
         "resolved": "6.0.0-beta.1",
