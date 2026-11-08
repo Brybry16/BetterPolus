@@ -1,8 +1,4 @@
-﻿using Reactor;
-using Reactor.Utilities;
-using Reactor.Networking;
-using Reactor.Networking.Attributes;
-using BepInEx;
+﻿using BepInEx;
 using BepInEx.Configuration;
 using BepInEx.Logging;
 using HarmonyLib;
@@ -11,12 +7,10 @@ using BepInEx.Unity.IL2CPP;
 namespace BetterPolus;
 
 [BepInPlugin(Id, Name, Version)]
-[BepInDependency(ReactorPlugin.Id)]
-[ReactorModFlags(ModFlags.RequireOnAllClients)]
 [BepInProcess("Among Us.exe")]
 public class BetterPolusPlugin : BasePlugin
 {
-    private const string Id = "fr.isax.betterpolus";
+    private const string Id = "ch.brybry.betterpolus";
     private const string Name = "BetterPolus Mod";
     public const string Version = "2026.10.6";
 
@@ -31,13 +25,6 @@ public class BetterPolusPlugin : BasePlugin
 
         Enabled = Config.Bind("Polus", "Enable Better Polus", true, "Enable Polus map modifications");
         ReactorCountdown = Config.Bind("Polus", "Reactor Countdown", 40f, "Reactor sabotage countdown in Polus map");
-
-        ReactorCredits.Register(
-            "RePolus",
-            Version,
-            false,
-            ReactorCredits.AlwaysShow
-        );
             
         Logger.LogMessage($"{Name} loaded");
 
