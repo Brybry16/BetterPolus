@@ -10,9 +10,6 @@ registries:
   nuget-samboy:
     type: nuget-feed
     url: https://nuget.samboy.dev/v3/index.json
-  nuget-reactor:
-    type: nuget-feed
-    url: https://nuget.reactor.gg/v3/index.json
 
 updates:
   # Enable version updates for NuGet packages
